@@ -4,7 +4,7 @@
     "license": "MIT",
     "keywords": [
         "yii2",
-        "migration",
+        "db migration",
         "module db migration",
         "multiple migration"
     ],
