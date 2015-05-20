@@ -1,5 +1,5 @@
 {
-    "name": "uzproger/migrator",
+    "name": "uzproger/yii2-migrator",
     "description": "Yii2 Database migration extension which helps to migrate with multiple directories.",
     "license": "MIT",
     "keywords": [
