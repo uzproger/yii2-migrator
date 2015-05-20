@@ -1,0 +1,28 @@
+{
+    "name": "uzproger/migrator",
+    "description": "Yii2 Database migration extension which helps to migrate with multiple directories.",
+    "license": "MIT",
+    "keywords": [
+        "yii2",
+        "migration",
+        "module db migration",
+        "multiple migration"
+    ],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "uzproger",
+            "email": "uzproger@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "uzproger\\migrator\\": "src"
+        }
+    }
+}
