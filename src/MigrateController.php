@@ -16,6 +16,11 @@ class MigrateController extends BaseMigrateController
      * @var string Main migration name
     */
     public $baseMigrationName = 'Base';
+
+    /**
+     * @var boolean Show base migration
+    */
+    public $showBaseMigration = false;
   
     /**
      * @var array Migration pathes.
@@ -28,12 +33,15 @@ class MigrateController extends BaseMigrateController
     public function beforeAction($action)
     {
         echo "\n";
-        $this->additionalPaths = ArrayHelper::merge([
-            [
-                'name' => $this->baseMigrationName,
-                'path' => $this->migrationPath,
-            ]  
-        ], $this->additionalPaths);
+        if ($this->showBaseMigration) {
+            $this->additionalPaths = ArrayHelper::merge([
+                [
+                    'name' => $this->baseMigrationName,
+                    'path' => $this->migrationPath,
+                ]  
+            ], $this->additionalPaths);            
+        }
+
         $this->selectModule();
 
         return parent::beforeAction($action);
